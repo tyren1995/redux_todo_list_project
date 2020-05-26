@@ -1,11 +1,7 @@
 import { createStore } from 'redux'
 
-<<<<<<< HEAD
 // counter function this is a reducer, it takes the (beginning state, action) as it's parameters
 // Then it describes how action types transform the state into the next state
-=======
-// counter function to create and define actions
->>>>>>> bc1e049635cd89e441fe17602427746bbd160173
 function counter (state=0, action) {
     switch (action.type){
         case 'INCREMENT':
