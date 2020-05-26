@@ -1,11 +1,11 @@
 import { connect } from 'react-redux'
-import { toggleTodo } from '../actions'
+import { toggleTodo } from '../redux/actions'
 import TodoList from '../components/TodoList'
-import { VisibilityFilters} from '../actions'
+import { VisibilityFilters} from '../redux/actions'
 
 const getVisibleTodos = (todos, filter) => {
     switch (filter) {
-        case VisibilityFilters.Show_ALL:
+        case VisibilityFilters.SHOW_ALL:
             return todos
         case VisibilityFilters.SHOW_COMPLETED:
             return todos.filter(t => t.completed)
